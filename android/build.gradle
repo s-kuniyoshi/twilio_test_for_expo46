@@ -55,5 +55,11 @@ allprojects {
             }
         }
         maven { url 'https://www.jitpack.io' }
+        jcenter() {
+            content {
+                includeModule("org.webrtc", "google-webrtc")
+                includeModule("com.getkeepsafe.relinker", "relinker")
+            }
+        }
     }
 }
